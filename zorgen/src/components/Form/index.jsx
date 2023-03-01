@@ -1,3 +1,4 @@
+import Input from '../Form/Input'
 import React from 'react'
 
 export default function index() {
@@ -11,12 +12,9 @@ export default function index() {
       </div>
       <div className='flex flex-col mb-28'>
         <form className='block mx-6'>
-          <input className='mb-4 h-12 bg-cinza_input shadow-md w-full pl-4 text-caixa_text focus:outline-none' type="text" required placeholder='Digite seu nome' />
-          {/* lembrar que no focus eu tirei a borda do input */}
-
-          <input className='mb-4 h-12 bg-cinza_input shadow-md w-full pl-4 text-caixa_text' type="email" required placeholder='Digite seu e-mail' />
-
-          <input className='mb-4 h-12 bg-cinza_input shadow-md w-full pl-4 text-caixa_text' type="number" required placeholder='Celular' />
+          <Input type='text' required placeholder='Digite seu nome' />
+          <Input type="email" required placeholder='Digite seu e-mail' />
+          <Input type="number" required placeholder='Celular' />
 
           <textarea className='bg-cinza_input pl-4 text-caixa_text w-full' cols="42" rows="5" defaultValue="Mensagem"></textarea>
         </form>

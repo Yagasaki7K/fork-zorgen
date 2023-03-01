@@ -15,9 +15,9 @@ export default function Footer() {
         <p className='text-xs font-medium'>"Cuidar dos nossos clientes e parceiros sempre fez parte Growtech e agora faz parte da nossa nova identidade também: "Zorgen", que significa "cuidar", é o nosso novo nome, nossa nova proposta pra cuidar ainda melhor da sua empresa!</p>
       </div>
       <section className='flex justify-center sm:justify-start mb-7'>
-        <img className='mx-3 sm:mx-1 sm:ml-7' src={IconLinkedin} alt="" />
-        <img className='mx-3 sm:mx-1' src={IconInstagram} alt="" />
-        <img className='mx-3 sm:mx-1' src={IconWpp} alt="" />
+        <a href="#"><img className='mx-3 sm:mx-1 sm:ml-7' src={IconLinkedin} alt="Icone do Linkedin" /></a>
+        <a href="#"><img className='mx-3 sm:mx-1' src={IconInstagram} alt="Icone do Instagram" /></a>
+        <a href="#"><img className='mx-3 sm:mx-1' src={IconWpp} alt="Icone do Whatsapp" /></a>
       </section>
       <div className='flex row flex-wrap mx-7'>
       <ListFooter />
