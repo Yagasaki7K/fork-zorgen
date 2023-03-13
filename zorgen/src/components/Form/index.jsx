@@ -1,5 +1,5 @@
-import Input from '../Form/Input'
 import React from 'react'
+import Input from '../Form/Input'
 
 export default function index() {
   return (
