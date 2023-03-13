@@ -16,7 +16,7 @@ export default function index() {
           <Input type="email" required placeholder='Digite seu e-mail' />
           <Input type="number" required placeholder='Celular' />
 
-          <textarea className='bg-cinza_input pl-4 text-caixa_text w-full' cols="42" rows="5" defaultValue="Mensagem"></textarea>
+          <textarea className='bg-cinza_input pl-4 text-caixa_text w-full pt-2' cols="42" rows="5" defaultValue="Mensagem"></textarea>
         </form>
         <button className='text-xl font-semibold underline mt-4 lg:ml-auto lg:pr-8'>Enviar</button>
       </div>

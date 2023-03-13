@@ -6,7 +6,7 @@ import ListSection from './ListSection'
 export default function Footer() {
   return (
     <>
-      <div className='mx-6'>
+      <div className='mx-6 border-t border-borda pt-4'>
         <Logo isFooter={true} />
       </div>
       <div className='mt-7 mx-7 text-texto_final mb-5 sm:w-2/4'>
@@ -14,11 +14,10 @@ export default function Footer() {
       </div>
       <ListSection />
 
-      <div className='mx-9 flex sm:justify-end'>
-        
+      <div className='mx-9 flex sm:justify-end pr-1'>
           <p className='font-normal text-text_footer sm:mt-10 sm:mb-3'>
             Zorgen Tecnologia LTDA.
-            CNPJ 55555555555.
+            CNPJ 30.164.142/0001-55.
             Todos os direitos reservados
           </p>
           <ListFooter />
