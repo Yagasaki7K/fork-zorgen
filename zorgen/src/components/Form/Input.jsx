@@ -1,6 +1,6 @@
 import React from 'react'
 
-export default function Input({ type, placeholder, required }) {
+export default function Input({ type, placeholder, required, onChange }) {
   // passei as props que eu quero poder alterar e reutilizar
   // reutilizei elas no index, e mudei o valor do type e placeholder
   return (
@@ -8,6 +8,7 @@ export default function Input({ type, placeholder, required }) {
       type={type}
       required={required}
       placeholder={placeholder}
+      onChange={onChange}
     />
   )
 }
