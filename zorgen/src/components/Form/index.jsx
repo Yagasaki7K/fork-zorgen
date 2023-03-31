@@ -1,5 +1,6 @@
 import { useState } from 'react';
 import Input from '../Form/Input';
+import emailjs from "@emailjs/browser"
 
 export default function Index() {
   const [nome, setNome] = useState('');
@@ -15,10 +16,27 @@ export default function Index() {
       return;
     }
 
-    alert("Email Enviado!")
-  }
+    const templateParams = {
+      from_nome: nome,
+      email: email,
+      celular: celular,
+      mensagem: mensagem,
+    }
 
-  // CONTINUAR A PARTIR DAQUI, USAR O EMAILJS PRA ENVIAR FORM
+    emailjs.send("service_frs1cnu", "template_rb4ndoq", templateParams, "rOrCNeOHrky77AOD8")
+      // service_id,  template, templateparams, public key
+      .then((response) => {
+        console.log("Email Enviado", response.status, response.text)
+        alert("Email Enviado")
+        window.location.reload();
+        setNome("")
+        setEmail("")
+        setCelular("")
+        setMensagem("")
+      }, (erro) => {
+        console.log("Erro", erro)
+      })
+  }
 
   return (
     <div className='sm:flex mt-24 sm:mx-32'>
@@ -55,8 +73,8 @@ export default function Index() {
           <textarea className='bg-cinza_input pl-4 text-caixa_text w-full pt-2'
             cols="42" rows="5"
             placeholder='Mensagem'
-            onChange={(e) => setMensagem(e.target.value)}>
-            value={mensagem}
+            onChange={(e) => setMensagem(e.target.value)}
+            defaultValue={mensagem}>
           </textarea>
 
           <button className='text-xl font-semibold underline mt-4 lg:ml-auto lg:pr-8'
