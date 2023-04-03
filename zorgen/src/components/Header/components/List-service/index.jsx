@@ -1,7 +1,7 @@
 import React from 'react'
 import ListItem from './ListItem';
 
-const menuItems = ['SERVIÇOS', 'PORTFÓLIO', 'SOBRE', 'CONTATO'];
+const menuItems = ['PROJETOS', 'CONTATO'];
 
 export default function ListServices() {
     return (

@@ -3,7 +3,7 @@ import { Bars3Icon } from '@heroicons/react/24/solid'
 import ListItem from '../List-service/ListItem';
 
 export default function Menu() {
-  const menuItems = ['SERVIÇOS', 'PORTFÓLIO', 'SOBRE', 'CONTATO'];
+  const menuItems = ['PROJETOS', 'CONTATO'];
   const [isMenuOpen, setIsMenuOpen] = useState(false);
   // usei o false para o menu n renderizar a lista quando entrar na pag
 

@@ -1,7 +1,7 @@
 import React from 'react'
 
 export default function ListFooter() {
-    const ListFooter = ['Serviços', 'Sobre', 'Trabalhe Conosco', 'Contato', 'Área do Cliente']
+    const ListFooter = ['Contato', 'Área do Cliente']
 
   return (
     <ul className='justify-end sm:text-sm text-texto_final mb-3 sm:flex sm:mb-0'>
