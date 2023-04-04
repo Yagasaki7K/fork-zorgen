@@ -39,7 +39,7 @@ export default function Index() {
   }
 
   return (
-    <div className='sm:flex mt-24 sm:mx-32'>
+    <div id='text_contato' className='sm:flex mt-24 sm:mx-32'>
       <div className='text-center mb-12 text-texto_final'>
         <h1 className='text-titulos text-4xl text-center mb-4'>Contato</h1>
         <p className='mb-9 mx-6  text-base'>Entre em contato com nosso consultor de vendas e descubra como podemos lhe ajudar a desenvolver sua solução de software</p>

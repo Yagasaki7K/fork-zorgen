@@ -18,7 +18,7 @@ import ProjectFive from '../../assets/images/projetos-5.svg'
 export default () => {
   return (
     <>
-    <h1 className='text-center font-bold text-xl text-titulos mb-7'>Projetos</h1>
+    <h1 id='text_projetos' className='text-center font-bold text-xl text-titulos mb-7'>Projetos</h1>
     <Swiper
       // install Swiper modules
       modules={[Navigation, A11y]}

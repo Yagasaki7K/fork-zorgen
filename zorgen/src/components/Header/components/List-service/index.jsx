@@ -1,7 +1,10 @@
 import React from 'react'
 import ListItem from './ListItem';
 
-const menuItems = ['PROJETOS', 'CONTATO'];
+const menuItems = [
+    { title: 'PROJETOS', link: '#text_projetos' },
+    { title: 'CONTATO', link: '#text_contato' },
+];
 
 export default function ListServices() {
     return (
@@ -9,7 +12,7 @@ export default function ListServices() {
             <ul className="sm:flex justify-end items-center">
                 {menuItems.map(menuItem => {
                     return (
-                        <ListItem key={menuItem} service={menuItem} />
+                        <ListItem key={menuItem.title} service={menuItem.title} link={menuItem.link} />
                     )
                 })}
             </ul>
