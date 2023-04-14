@@ -7,3 +7,6 @@ Este projeto foi feito utilizando as seguintes tecnologias:
 * Javascript
 * React
 * Tailwind
+
+##🚀 Características:
+Site sobre uma empresa, com formulário funcional.
