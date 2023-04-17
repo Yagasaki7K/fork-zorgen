@@ -1,6 +1,7 @@
 import { useState } from 'react';
 import Input from '../Form/Input';
 import emailjs from "@emailjs/browser"
+import Send from '../Button/Send';
 
 export default function Index() {
   const [nome, setNome] = useState('');
@@ -80,7 +81,7 @@ export default function Index() {
           <button className='text-xl font-semibold underline mt-4 lg:ml-auto lg:pr-8'
             type='submit'
             value="Enviar">
-            Enviar
+            <Send />
           </button>
         </form>
       </div>

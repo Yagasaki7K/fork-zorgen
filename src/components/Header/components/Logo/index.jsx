@@ -9,7 +9,9 @@ export default function Logo({ isFooter }) {
     return (
         <div className="flex items-center">
             <span className="pl-2">
-                <img src={isFooter ? logoComTexto : logo} />
+                <a href="/">
+                    <img src={isFooter ? logoComTexto : logo} />
+                </a>
             </span>
         </div>
     )
