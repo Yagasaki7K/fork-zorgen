@@ -14,7 +14,7 @@ Site sobre uma empresa, com formulário funcional.
 ## Como executar o projeto?
 
 1. Clone este repositório em sua máquina:
-git clone https://github.com/seu-usuario/seu-projeto.git
+git clone
 
 
 2. Instale as dependências do projeto:
